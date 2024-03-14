@@ -31,9 +31,12 @@ public class Student implements Serializable {
     public String getName(){
         String s = fullName.trim();
         if(s.contains(" ")){
-            s = s.substring(s.lastIndexOf(" ")+1);
+            return s.substring(s.lastIndexOf(" ")+1);
         }
-        return s;
+        else{
+            return s;
+        }
+
     }
     public void setFullName(String fullName) {
         if(!fullName.isEmpty()){

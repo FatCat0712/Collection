@@ -6,6 +6,10 @@ import java.util.Comparator;
 public class StudentList{
     private ArrayList<Student> studentList;
 
+    public StudentList(){
+        this.studentList = new ArrayList<Student>();
+    }
+
     public StudentList(ArrayList<Student> studentList) {
         this.studentList = studentList;
     }
@@ -66,8 +70,11 @@ public class StudentList{
                 if(o1.getAverageScore() > o2.getAverageScore()){
                     return -1;
                 }
-                else{
+                else if(o1.getAverageScore() <= o2.getAverageScore()){
                     return 1;
+                }
+                else{
+                    return 0;
                 }
             }
         });

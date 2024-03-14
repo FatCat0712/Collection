@@ -9,20 +9,20 @@ public class Main {
         boolean flag = true;
 
         while (flag){
-            System.out.println("----- Student Manager ------");
-            System.out.println("1. Add students to list");
-            System.out.println("2. Print out student");
-            System.out.println("3. Check if list is empty");
-            System.out.println("4. Print the number of students present in list");
-            System.out.println("5. Empty the student list");
-            System.out.println("6. Remove a student by ID");
-            System.out.println("7. Check if student is exist by ID");
-            System.out.println("8. Find a student by name");
-            System.out.println("9. Print the list decreasing by average score");
-            System.out.println("10. Save student list as file");
-            System.out.println("11. Read list from a file");
-            System.out.println("0. Exit");
-            System.out.println("----------------------------");
+            System.out.println("---------------- Student Manager -----------------");
+            System.out.println("| 1. Add students to list                        |");
+            System.out.println("| 2. Print out student                           |");
+            System.out.println("| 3. Check if list is empty                      |");
+            System.out.println("| 4. Print the number of students present in list|");
+            System.out.println("| 5. Empty the student list                      |");
+            System.out.println("| 6. Remove a student by ID                      |");
+            System.out.println("| 7. Check if student is exist by ID             |");
+            System.out.println("| 8. Find a student by name                      |");
+            System.out.println("| 9. Print the list decreasing by average score  |");
+            System.out.println("| 10. Save student list as file                  |");
+            System.out.println("| 11. Read list from a file                      |");
+            System.out.println("| 0. Exit                                        |");
+            System.out.println("--------------------------------------------------");
             Scanner sc = new Scanner(System.in);
             int choice = sc.nextInt();
             sc.nextLine();
