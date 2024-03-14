@@ -1,0 +1,37 @@
+Xây dựng chương trình quản lý danh sách sinh viên
+
+Thông tin sinh viên gồm có:
+
++ Mã sinh viên
++ Họ và tên
++ Năm sinh
++ Điểm trung bình
+
+Yêu cầu 
+
+_ Sử dụng ArrayList
+
+_ Cho phép người dùng chọn lựa và thực hiện
+
++ Thêm sinh viên vào danh sách.
+
++ In danh sách sinh viên ra màn hình
+
++ Kiểm tra danh sách có rỗng hay không
+
++ Lấy ra số lượng sinh viên hiện có trong danh sách
+
++ Làm rỗng danh sách sinh viên
+
++ Xóa một sinh viên ra khỏi danh sách dựa trên mã sinh viên
+
++ Kiểm tra sinh viên có tồn tại trong danh sách hay không, dựa trên mã sinh viên
+
++ Tìm kiếm một sinh viên dựa trên tên.
+
++ Xuất ra danh sách sinh viên có điểm từ cao đến thấp
+
++ Lưu danh sách sinh viên xuống file
+
++ Đọc danh sách sinh viên từ file
+
