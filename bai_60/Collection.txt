@@ -1,0 +1,27 @@
+Trong java Collection và Collections là 2 khái niệm khác nhau.
+
+* Collections trong java là một khuôn khổ cung cấp một kiến trúc để lưu trữ và thao tác tới nhóm các đối tượng. Tất cả các hoạt động mà bạn thực hiện trên một dữ liệu như tìm kiếm, phân loại, chèn, xóa ... có thể thực hiện bởi Java Collections.
+
+* Collection trong java là một root interface trong hệ thống cấp bậc Collection. Java Collection cung cấp nhiều interface (Set, List, Queue, Deque, ... ) và các lớp ( ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet, ...)
+
+
+* Những interface chính của Collection
+
++ Set: là một collection không thể chứa 2 giá trị trùng lặp. Set được sử dụng để biểu diễn các tập hợp, 
+
+_ Ví dụ : bộ bài, thời khóa biểu của học sinh, các tiến trình đang chạy trên máy tính, ...
+
++ List: là một collection có thứ tự ( đôi khi còn được gọi là một chuỗi). List có thể chứa các phần tử trùng lặp. Thường có quyền kiểm soát chính xác vị trí các phần tử được chèn vào và có thể truy cập chúng bằng chỉ số ( vị trí của chúng ).
+
++ Queue ( hàng đợi): là một collection được sử dụng để chứa nhiều phân tử trước khi xử lý. Bên cạnh các thao tác cơ bản của collecion, Queue cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Queue có thể được sử dụng như là FIFO (First-In, First Out)
+
++ Deque: là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Ngoài các thao tác cơ bản của collection, một Deque cung cấp các thao tác bổ sung như chèn  
+lấy ra và kiểm tra. Deques có thể được sử dụng là FIFO (First-In, First-Out, vào trước, ra trước) và LIFO (last in, first out) . Trong một Deque tất cả các phần tử mới có thể được chèn vào, lấy ra ở cả hai đầu
+
++ Map: là một đối tượng ánh  xạ mỗi key tương ứng với một giá trị. Map không thể chứa giá trị trùng lặp. Mỗi key có thể ánh đến nhiều nhất một giá trị.
+
+2 interface được sắp xếp của Set và Map
+
++ SortedSet: là một Set chứa các phần tử theo thứ tự tăng dần
+
++ SortedMap: là một Map chứa các phần tử được sắp xếp theo thứ tự tăng dần theo key của chúng. Các SortedMap được sử dụng cho các collection theo thứ tự tự nhiên của cặp key/value, chẳng hạn như từ điển và danh bạ điện thoại.
