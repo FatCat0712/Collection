@@ -1,0 +1,35 @@
+Ký pháp nghịch đảo Ba Lan
+
+Độ ưu tiên:
+
+^ 	--> 	* , / ,% 	--> 	+ , - 		--> 	=
+ 
+Quy ước
+
++ Nếu là toán hạng => Thêm vào Queue
+
++ Nếu là toán tử
+	
+	(B1) - Stack rỗng => thêm vào stack
+	    
+	     - Nếu toán tử trên cùng stack là '(' => thêm vào stack
+
+	     - Nếu toán tử đang xét '>' toán tử trên cùng của stack
+		=> thêm toán tử đang xét vào stack 
+
+	     - Nếu toán tử đang xet '<=' toán tử trên cùng của stack
+		=> thêm toán tử trên cùng stack vào queue. Sau đó quay lại B1
+
++ Nếu là '(' 	=> Thêm vào stack
+
++ Nếu là ')' 
+
+	(B1) - Nếu toán tử trên cùng stack là '(' thì xóa dấu (
+	     
+	     - Nếu toán tử trên cùng stack không phải '(' 
+		=> chuyển (q.push + s.pop) toán tử đó vào queue rồi quay lại B1
+
++ Biểu thức hết phép tính => Chuyển lần lượt các phép tính ở stack sang queue
+
+
+ 

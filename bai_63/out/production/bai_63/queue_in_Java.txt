@@ -1,0 +1,34 @@
+* Hàng đợi ( tiếng anh : Queue) là một cấu trúc dữ liệu dùng để lưu giữ các đối tượng theo cơ chế FIFO (viết tắt từ tiếng Tiếng Anh: First In First Out) nghĩa là "vào trước ra trước"
+
+* Hàng đợi PriorityQueue là hàng đợi ưu tiên, nó lưu trữ các phần tử theo trật tự tự nhiên của phần tử ( nếu các phần tử đó so sánh được với nhau - thi hành Comparable) hoặc một bộ so sánh Comparotor được cung cấp cho PriorityQueue.
+
+* Dequeue là "hàng đợi 2 đầu". Với một hàng đợi thông thường, bạn thêm mọi thứ với một đầu và lấy chúng từ đầu kia. Với hàng đợi kết thúc kép, bạn có thể thêm mọi thứ vào một trong hai đầu và lấy chúng từ một trong hai đầu. Điều đó làm cho nó linh hoạt hơn một chút, ví dụ, bạn có thể sử dụng nó như một ngăn xếp nếu bạn muốn.
+
+* Cách làm việc của cấu trúc dữ liệu Queue
+			Throws exception		Returns special value
+
+Insert 			add(e)				offer(e)
+
+Remove			remove()			poll
+
+Examine 		element()			peek()
+
+
+* Một số phương thức được sử dụng trong Queue Interface:
+
++ add() -> Chèn phần tử đã chỉ định vào hàng đợi. Nếu tác vụ thành công, add() sẽ trả về true, nếu không nó sẽ ném ra một ngoại lệ.
+
++ offer() -> chèn phần tử đã chỉ định vào hàng đợi. Nếu tác vụ thành công, offer() sẽ trả về true, nếu không nó sẽ trả về false.
+
++ element() -> trả về phần đầu của hàng đợi. Ném một ngoại lệ nếu hàng đợi trống.
+
++ peek() -> trả về đầu của hàng đợi. Trả về null nếu hàng đợi trống.
+
++ remove() -> trả về và xóa hàng đầu của hàng đợi. Ném một ngoại lệ nếu hàng  đợi trống.
+
++ poll() -> trả về và loại bỏ phần đầu của hàng đợi. Trả về null nếu hàng đợi trống.
+
+* Cách làm việc của cấu trúc dữ liệu Dequeue
+
+Xem hình dequeue
+
