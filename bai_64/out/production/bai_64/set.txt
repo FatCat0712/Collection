@@ -1,0 +1,41 @@
+Set là một interface kế thừa collection interface trong java. Set trong java là một Collection không thể chứa các phần tử trùng lặp.
+
+Set được triển khai bởi HashSet, LinkedHashSet, TreeSet hoặc EnumSet
+
++ HashSet lưu trữ các phần tử của nó trong bảng băm, là cách thực hiện tốt nhất, tuy nhiên nó không đảm bảo về thứ tự các phần tử được chèn vào.
+
++ TreeSet lưu trữ các phần tử của nó trong một cây, sắp xếp các phần tử của nó dựa trên các giá trị của chúng, về cơ bản là chậm hơn HashSet
+
++ LinkedHashSet được triển khai dưới dạng bảng băm có cấu trúc dữ liệu danh sách liên kết, săp xếp các phần tử của nó dựa trên thứ tự chúng được chèn vào tập hợp (thứ tự chèn)
+
++ EnumSet là một cài đặt chuyên biệt để dử dụng với các kiểu Enum.
+
+* Các phương thức trong Set 
+
++ boolean add (Object element) : nó được sử dụng để chèn các phần tử vào set
+
++ boolean addAll(Collection c) : được sử dụng để chèn tất cả các phần tử của c vào set
+
++ void clear(): xóa tất cả các phần tử khỏi set
+
++ boolean contains(Object elemetn) : trả về true nếu tập hợp này chứa phần tử đã chỉ định
+
++ boolean containsAll(Collection c): trả về true nếu set chứa tất cả các phần tử của collection c đã chỉ định
+
++ boolean equals(Object o) : So sánh các đối tượng được chỉ định với set
+
++ boolean isEmpty() : trả về true nếu set không chứa phần tử.
+
++ int hashCode() : trả về giá trị mã băm
+
++ Iterator iterator() : trả về một trình vòng lặp interator để duyệt qua các phần tử của set.
+
++ boolean remove(Object o) : xóa phần tử đã chỉ định khỏi set.
+
++ boolean removeAll(Collection c) : Xóa khỏi set tất cả các phần tử của nó được chứa trong collection c đã chỉ định
+
++ int size() : trả về số lượng phần tử của set
+
++ Object[] toArray : trả về một mảng chứa tất cả các phần tử của trong set.
+
++ T[] toArray(T[] a) : trả về một mảng chứa tất cả các phần tử trong set, kiểu runtime của mảng trả về là kiểu đã chỉ định
