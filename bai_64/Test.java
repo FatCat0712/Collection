@@ -2,10 +2,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args) throws IOException {
@@ -16,7 +13,7 @@ public class Test {
         while (flag){
             System.out.println("---- Lucky Wheel ----");
             System.out.println("How can we help u ?");
-            System.out.println("1. Add a ticket");
+            System.out.println("1. Add tickets");
             System.out.println("2. Remove a ticket");
             System.out.println("3. Print all the tickets");
             System.out.println("4. Check a ticket");
@@ -34,11 +31,15 @@ public class Test {
                     System.out.println("How many tickets: ");
                     int ticketNum = sc.nextInt();
                     sc.nextLine();
+                    Random rd = new Random();
                     for(int i = 0; i < ticketNum; i++){
-                        System.out.println("Enter the ticket ID");
-                        String ticketId = sc.nextLine();
-                        ticketBox.addTicket(ticketId);
+                        String ticketId = "00"+rd.nextInt(1,100);
+                        if(!ticketBox.checkTicketExists(ticketId)){
+                            ticketBox.addTicket(ticketId);
+                        }
+
                     }
+                    System.out.println("Created "+ ticketNum + " tickets");
                     break;
                 case 2:
                     System.out.println("Enter the ticket ID");
@@ -46,7 +47,7 @@ public class Test {
                     ticketBox.removeTicket(removeTicket);
                     break;
                 case 3:
-                    System.out.println(ticketBox.printAllTickets());
+                    ticketBox.printAllTickets();
                     break;
                 case 4:
                     System.out.println("Enter the ticket ID");

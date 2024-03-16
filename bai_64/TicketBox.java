@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Set;
 
@@ -38,8 +40,18 @@ public class TicketBox implements Serializable {
         int ticket = rd.nextInt(this.ticketBox.size());
         return this.ticketBox.toArray()[ticket].toString();
     }
-    public String printAllTickets(){
-        return this.ticketBox.toString();
+    public void printAllTickets(){
+        for(int i = 0; i < ticketBox.size(); i++){
+            for(int j = 0; j < 4;j++){
+                int n = i;
+                System.out.print(ticketBox.toArray()[n].toString()+ " ");
+                if(i != ticketBox.size() - 1){
+                    i++;
+                }
+
+            }
+            System.out.println();
+        }
     }
 
     public void saveTicketsToAFile(String file) throws IOException{
