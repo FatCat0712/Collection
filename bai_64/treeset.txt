@@ -1,0 +1,24 @@
+Các phương thức chỉ có trong TreeSet
+
+first() : lấy phần tử nhỏ nhất trong TreeSet
+
+last() : lấy phần tử lớn nhất trong TreeSet
+
+pollLast() : xóa phần tử lớn nhất trong TreeSet
+
+pollFirst() : Xóa phần tử nhỏ nhất trong TreeSet
+
+lower(n) : lấy ra phần tử lớn nhất mà nhỏ hơn n trong set ( trả về null nếu ko tìm thấy)
+
+higher(n) : tìm phần tử nhỏ nhất mà lớn hơn n trong set ( trả về null nếu ko tìm thấy)
+
+ceiling(n): tìm phần tử nhỏ nhất mà lớn hơn hoặc bằng n trong set
+
+floor(n): tìm phần tử lớn nhất mà nhỏf hơn hoặc bằng n trong set
+
+
+headSet(n) : lấy ra các phần tử nhỏ hơn hoặc bằng n
+
+tailSet(n) : lấy ra các phần tử lớn hơn hoặc bằng n
+
+
