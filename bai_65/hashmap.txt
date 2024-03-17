@@ -1,0 +1,73 @@
+* Khái niệm về HashMap
+Map trong Java là một interface cho phép lưu trữ dữ liệu theo cặp 'key-value', nơi mỗi key duy nhất được liên kết với một giá trị. 
+
+HashMap là một lớp kế thừa lớp AbstractMap và triển khai interface Map, nổi tiếng vì hiệu suất cao và không giữ thứ tự cụ thể cho các phần tử. 
+
+HashMap giúp mình truy xuất,thêm và xóa các phần tử dựa trên key, và không cho phép các key trùng lặp. 
+
+Sự lựa chọn tốt cho việc lưu trữ dữ liệu lớn cần truy cập nhanh chóng và hiệu quả.
+
+Ví dụ 
+	+ danh bạ điện thoại < số điện thoại - tên người liên lạc >
+
+	+ từ điển < từ khóa - nghĩa >
+
+	+ làm menu thực đơn < tên món - giá >
+
+* Những điểm quan trọng về HashMap
+
++ Lưu trữ dưới dạng cặp key và value
+
++ Nó chứa các key duy nhất
+
++ Nó có thể có 1 key là null và nhiều giá trị null
+
++ Nó duy trì các phần tử không theo thứ tự
+
+* Constructor của lớp HashMap trong Java
+
+HashMap : nó được sử dụng để tạo một HashMap trống.
+
+HashMap(int capacity, float loadFactor): được sử dụng để xây dụng một HashMap trống với dung lượng (capacity) ban đầu được chỉ định và hệ số tải (loadFactor) được chỉ định.
+
+HashMap(int capacity) : được sử dụng một HashMap trống với dung lượng ban đầu được chỉ định và hệ số tải mặc định là 0.75.
+
+HashMap (Map t): Nó được sử dụng để xây dựng HashMap với một Map đã cho.
+
+* Phương thức của lớp HashMap
+
+void clear()		: Xóa tất cả các phần tử của HashMap
+
+Object clone()		: trả về một bản copy của HashMap
+
+boolean containsKey(Object key) : trả về true nếu HashMap chứa một phần tử có key được chỉ định
+
+boolean containsValue(Object value): trả về true nếu HashMap chứa một phần tử có giá trị (value) được chỉ định
+
+Set entrySet() 		: trả về Collection view các ánh xạ có trong HashMap
+
+Object get(Objet key)	: trả về giá trị của key được chỉ định.
+
+boolean isEmpty()	: trả về true nếu HashMap trống.
+
+Set keySet()		: trả về một Set Interface chứa tất cả các key của HashMap
+
+Object put(Object key, Object value) : Thêm một cặp - key vào HashMap
+
+void putAll(Map t) 	: sao chép các phần tử của Map được chỉ định vào HashMap
+
+Object remove(Object key) : Xóa một phần tử có key được chỉ định ra khỏi HashMap
+
+int size()		: trả về số phần tử của HashMap
+
+Collection values()	: trả về Collection của các giá trị có trong HashMap
+
+Sự khác biệt giữa HashSet và HashMap
+
+HashSet chỉ chứa giá trị ( value ) trong khi HashMap chứa cặp key và value
+
+
+
+
+
+
