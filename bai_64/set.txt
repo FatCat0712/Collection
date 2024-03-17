@@ -34,6 +34,8 @@ Set được triển khai bởi HashSet, LinkedHashSet, TreeSet hoặc EnumSet
 
 + boolean removeAll(Collection c) : Xóa khỏi set tất cả các phần tử của nó được chứa trong collection c đã chỉ định
 
++ boolean retainAll(Collection c) : Giữ những phần tử chứa trong set hiện tại và set đã chỉ định. Xóa những phần tử không xuất hiện ở cả 2 set.
+
 + int size() : trả về số lượng phần tử của set
 
 + Object[] toArray : trả về một mảng chứa tất cả các phần tử của trong set.
