@@ -1,0 +1,24 @@
+Generic là gì ?
+
+Khái niệm Generic được đưa vào kể tử Java 5.
+
+Thuật ngữ "generic" được hiểu là tham số hóa kiểu dữ liệu. Việc tham số hóa kiểu dữ liệu giúp cho lập trình viên có thể dễ bắt lỗi các kiểu dữ liệu không hợp lệ, đồng thời giúp dễ dàng hơn cho việc tạo và sử dụng các class, interface, method với nhiều kiểu dữ liệu khác nhau.
+
+* Loại quy ước đặt tên tham số
+
+Theo quy ước tên tham số kiểu là các chữ cái viết hoa. Điều này trái ngược hẳn với các quy ước đặt tên biến mà bạn đã biết, và có lý do chính đáng. Nếu không có quy ước này, sẽ rất khó để phân biệt giữa một biến kiểu và một lớp thông thường hoặc tên giao diện.
+
+Các tên tham số kiểu được sử dụng phổ biến nhất là:
+
++ E - Element ( được sử dụng rộng rãi bởi Java Collections Framework)
+
++ K - Chìa khóa
+
++ N - Số
+
++ T - Loại 
+
++ V- Giá trị
+
++ S, U, V, v,v - Loại thứ 2, 3, 4
+
